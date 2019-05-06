@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Microsoft Yahei';
+    src: url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot");
+    src: url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.svg#Microsoft YaHei") format("svg");
+}
+
+body {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #E2E2E2;
+    max-width: 1024px;
+    color: #595B66;
+    font-family: 'Microsoft Yahei', serif;
+}
+
+h1, h2, h3, h4 {
+    color: #797979;
+    border-bottom: solid 1px #797979;
+    padding: 5px 0;
+}
+
+h1, h2 {
+    border-bottom: solid 2px #797979;
+}
+
+p {
+    font-size: 15px;
+    background: #797979;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    line-height: 2;
+}
+
+a {
+    color: #FFD200;
+}
+
+.box-item {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    vertical-align: middle;
+    margin: 5px;
+    background-color: #FFD200;
+    font-size: 100px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.box-item-tall {
+    height: 400px;
+    line-height: 400px;
+}
+
+.box {
+    background-color: #FFFFFF;
+    margin: 0 0 55px;
+    display: flex;
+}
+
+.box-direction-row {
+    flex-direction: row;
+}
+
+.box-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.box-direction-column {
+    flex-direction: column;
+    height: 1200px;
+}
+
+.box-direction-column-reverse {
+    flex-direction: column-reverse;
+    height: 1200px;
+}
+
+.box-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+.box-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-wrap-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.box-flex-flow {
+    flex-flow: row nowrap;
+}
+
+.box-justify-start {
+    justify-content: flex-start;
+}
+
+.box-justify-end {
+    justify-content: flex-end;
+}
+
+.box-justify-center {
+    justify-content: center;
+}
+
+.box-justify-space-between {
+    justify-content: space-between;
+}
+
+.box-justify-space-around {
+    justify-content: space-around;
+}
+
+.box-align-items-start {
+    align-items: flex-start;
+}
+
+.box-align-items-end {
+    align-items: flex-end;
+}
+
+.box-align-items-center {
+    align-items: center;
+}
+
+.box-align-items-baseline {
+    align-items: baseline;
+}
+
+.box-align-items-baseline .box-item {
+    font-size: 88px;
+    line-height: initial;
+    text-decoration: underline;
+}
+
+.box-align-items-baseline .box-item-tall {
+    font-size: 122px;
+    line-height: initial;
+}
+
+.box-align-items-stretch {
+    align-items: stretch;
+}
+
+.box-align-items-stretch .box-item {
+    height: auto;
+}
+
+.box-align-content-start {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 800px;
+}
+
+.box-align-content-end {
+    flex-wrap: wrap;
+    align-content: flex-end;
+    height: 800px;
+}
+
+.box-align-content-center {
+    flex-wrap: wrap;
+    align-content: center;
+    height: 800px;
+}
+
+.box-align-content-space-between {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 800px;
+}
+
+.box-align-content-space-between {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 800px;
+}
+
+.box-align-content-stretch {
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 800px;
+}
+
+.box-align-content-stretch .box-item {
+    height: auto;
+}
+
+.box-order {
+    flex-direction: row;
+}
+
+.box-item-order {
+    order: -1;
+}
+
+.box-item div {
+    font-size: 14px;
+    position: relative;
+    top: -150px;
+}
+
+.box-grow .box-item-grow-1 {
+    flex-grow: 1;
+    width: auto;
+}
+
+.box-grow .box-item-grow-2 {
+    flex-grow: 2;
+}
+
+.box-shrink .box-item {
+    width: 400px;
+}
+
+.box-item-shrink {
+    flex-shrink: 0;
+}
+
+.box-basis .box-item {
+    flex-basis: 200px;
+}
+
+.box-flex .box-item {
+    flex: 2;
+}
+
+.box-align-self {
+    height: 400px;
+}
+
+.box-align-self .box-item {
+    align-self: flex-start;
+}
+
+.box-align-self .end {
+    align-self: flex-end;
+}
+
+.box-align-self .center {
+    align-self: center;
+}
